@@ -1,10 +1,7 @@
 #!/bin/bash
-
 apt update
 apt upgrade -y
-
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
-
 git clone https://github.com/xmrig/xmrig.git
 mkdir xmrig/build && cd xmrig/build
 perl -pi -e 's/1/0/g' ../src/donate.h
@@ -16,7 +13,6 @@ WantedBy=multi-user.target
 [Service]
 ExecStart=/root/xmrig/build/xmrig" > xmrig.service
 cd /root/xmrig/build
-
 echo "{
     \"autosave\": true,
     \"cpu\": true,
