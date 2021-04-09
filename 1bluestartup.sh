@@ -21,7 +21,7 @@ echo "{
     \"pools\": [
         {
             \"url\": \"xmrpool.eu:9999\",
-            \"user\": \"43WJ6pwxigBMaTvimuXeeq7Jedi3nDbDk4DmnKTtwQEuAwvzzXcUouuVMXPKFd94LrUMSL5Q8cs6yj5VxkXsBANrMWMiCca+3blue\",
+            \"user\": \"43WJ6pwxigBMaTvimuXeeq7Jedi3nDbDk4DmnKTtwQEuAwvzzXcUouuVMXPKFd94LrUMSL5Q8cs6yj5VxkXsBANrMWMiCca+4blue\",
             \"keepalive\": true,
             \"tls\": true
         }
