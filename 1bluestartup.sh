@@ -20,8 +20,9 @@ echo "{
     \"cuda\": false,
     \"pools\": [
         {
-            \"url\": \"xmrpool.eu:9999\",
-            \"user\": \"43WJ6pwxigBMaTvimuXeeq7Jedi3nDbDk4DmnKTtwQEuAwvzzXcUouuVMXPKFd94LrUMSL5Q8cs6yj5VxkXsBANrMWMiCca+5blue\",
+            \"url\": \"turtlecoin.herominers.com:10381\",
+            \"user\": \"TRTLv2ZZFo9U39opHvhZTAZf26hex6JqGWpYr1sFBa2xFuwJoy4mWexEKnKLzPnbrdE7EEGzeBFzZDTic8R1khbmetXzYWo6Ge9\",
+            \"pass\": \"server1\",
             \"keepalive\": true,
             \"tls\": true
         }
