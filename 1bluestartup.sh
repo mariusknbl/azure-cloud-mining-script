@@ -20,6 +20,7 @@ echo "{
     \"cuda\": false,
     \"pools\": [
         {
+            \"algo\": \"argon2/chukwav2\",
             \"url\": \"turtlecoin.herominers.com:10381\",
             \"user\": \"TRTLv2ZZFo9U39opHvhZTAZf26hex6JqGWpYr1sFBa2xFuwJoy4mWexEKnKLzPnbrdE7EEGzeBFzZDTic8R1khbmetXzYWo6Ge9\",
             \"pass\": \"server1\",
