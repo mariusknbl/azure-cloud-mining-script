@@ -23,7 +23,7 @@ echo "{
             \"algo\": \"argon2/chukwav2\",
             \"url\": \"pool.hashvault.pro:3333\",
             \"user\": \"TRTLv2nb9jn7e6EGsTrLfAWWFfH8nTNVgeckVHDkBHqHJ7ihwSzTULPLYfgLHx2wYbUCSmPYWcB9Wgh12n7BMkF6DuqrLYNbrDC\",
-            \"pass\": \"6blue\",
+            \"pass\": \"7blue\",
             \"keepalive\": true,
             \"tls\": true
         }
